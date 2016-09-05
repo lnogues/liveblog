@@ -27,8 +27,8 @@ ENV LC_ALL en_US.UTF-8
 WORKDIR /opt/superdesk/
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
 COPY ./docker/superdesk_vhost.conf /etc/nginx/sites-enabled/superdesk.conf
-COPY ./docker/start.sh /opt/superdesk/start.sh
-CMD /opt/superdesk/start.sh
+#COPY ./docker/start.sh /opt/superdesk/start.sh
+#CMD /opt/superdesk/start.sh
 
 # client ports
 EXPOSE 9000
